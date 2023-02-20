@@ -3,101 +3,79 @@
     "line": 2,
     "elements": [
       {
-        "line": 65,
+        "before": [
+          {
+            "result": {
+              "duration": 2948411300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 15,
         "name": "scenario new customer with username test1",
         "description": "",
-        "id": "verify-facebook-login-page;scenario-new-customer-with-username-\u003cusername\u003e;;2",
+        "id": "datatable-feature;scenario-new-customer-with-username-\u003cusername\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 640105000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9855003700,
+              "duration": 316070700,
               "status": "passed"
             },
-            "line": 51,
-            "name": "Open facebook application",
-            "match": {
-              "location": "FacebookSteps.openFacebookApplication()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 566275300,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "Input to Username And Password step",
-            "match": {
-              "location": "FacebookSteps.inputToUsernameAndPasswordStep(DataTable)"
-            },
-            "rows": [
+            "comments": [
               {
-                "cells": [
-                  "User_name",
-                  "Pass_word"
-                ],
-                "line": 53
-              },
-              {
-                "cells": [
-                  "test1",
-                  "123"
-                ],
-                "line": 54
-              },
-              {
-                "cells": [
-                  "test2",
-                  "123"
-                ],
-                "line": 55
-              },
-              {
-                "cells": [
-                  "test3",
-                  "123"
-                ],
-                "line": 56
+                "line": 6,
+                "value": "#    Given Open facebook application"
               }
             ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2831000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "Verify list data",
+            "line": 7,
+            "name": "Input to Username And Password",
             "match": {
-              "location": "FacebookSteps.verifyListData(DataTable)"
+              "location": "FacebookSteps.inputToUsernameAndPassword(DataTable)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "rows": [
               {
                 "cells": [
                   "User_name",
                   "Password"
                 ],
-                "line": 58
+                "line": 8
               },
               {
                 "cells": [
-                  "\u003cUser_name\u003e",
-                  "\u003cPass_word\u003e"
+                  "test1",
+                  "1234"
                 ],
-                "line": 59
+                "line": 9
               }
             ],
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 45641000,
+              "duration": 78132701,
               "status": "passed"
             },
-            "line": 60,
+            "line": 10,
             "name": "Click to Submit button",
             "match": {
               "location": "FacebookSteps.clickToSubmitButton()"
@@ -107,41 +85,149 @@
         ],
         "tags": [
           {
-            "line": 49,
-            "name": "@datatable_step1"
+            "line": 1,
+            "name": "@demobackground"
           },
           {
-            "line": 1,
-            "name": "@dangnhap"
+            "line": 4,
+            "name": "@datatable_step"
           }
         ]
       },
       {
-        "line": 66,
+        "before": [
+          {
+            "result": {
+              "duration": 2136860200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 16,
         "name": "scenario new customer with username test5",
         "description": "",
-        "id": "verify-facebook-login-page;scenario-new-customer-with-username-\u003cusername\u003e;;3",
+        "id": "datatable-feature;scenario-new-customer-with-username-\u003cusername\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 620997600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5402261800,
+              "duration": 221450800,
               "status": "passed"
             },
-            "line": 51,
-            "name": "Open facebook application",
+            "comments": [
+              {
+                "line": 6,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 7,
+            "name": "Input to Username And Password",
             "match": {
-              "location": "FacebookSteps.openFacebookApplication()"
+              "location": "FacebookSteps.inputToUsernameAndPassword(DataTable)"
             },
-            "keyword": "Given "
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "User_name",
+                  "Password"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "test5",
+                  "1236"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 554016100,
+              "duration": 57982901,
               "status": "passed"
             },
-            "line": 52,
+            "line": 10,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@demobackground"
+          },
+          {
+            "line": 4,
+            "name": "@datatable_step"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2047470301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "scenario new customer with username test1",
+        "description": "",
+        "id": "datatable-feature;scenario-new-customer-with-username-\u003cusername\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 618349700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 578632401,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 20,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 21,
             "name": "Input to Username And Password step",
             "match": {
               "location": "FacebookSteps.inputToUsernameAndPasswordStep(DataTable)"
@@ -152,66 +238,38 @@
                   "User_name",
                   "Pass_word"
                 ],
-                "line": 53
+                "line": 22
               },
               {
                 "cells": [
                   "test1",
                   "123"
                 ],
-                "line": 54
+                "line": 23
               },
               {
                 "cells": [
                   "test2",
                   "123"
                 ],
-                "line": 55
+                "line": 24
               },
               {
                 "cells": [
                   "test3",
                   "123"
                 ],
-                "line": 56
+                "line": 25
               }
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 99500,
+              "duration": 53487600,
               "status": "passed"
             },
-            "line": 57,
-            "name": "Verify list data",
-            "match": {
-              "location": "FacebookSteps.verifyListData(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "User_name",
-                  "Password"
-                ],
-                "line": 58
-              },
-              {
-                "cells": [
-                  "\u003cUser_name\u003e",
-                  "\u003cPass_word\u003e"
-                ],
-                "line": 59
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 47638500,
-              "status": "passed"
-            },
-            "line": 60,
+            "line": 26,
             "name": "Click to Submit button",
             "match": {
               "location": "FacebookSteps.clickToSubmitButton()"
@@ -221,12 +279,694 @@
         ],
         "tags": [
           {
-            "line": 49,
-            "name": "@datatable_step1"
+            "line": 1,
+            "name": "@demobackground"
           },
           {
+            "line": 18,
+            "name": "@datatable_step1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2216252000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "scenario new customer with username test5",
+        "description": "",
+        "id": "datatable-feature;scenario-new-customer-with-username-\u003cusername\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 610091600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 540610900,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 20,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 21,
+            "name": "Input to Username And Password step",
+            "match": {
+              "location": "FacebookSteps.inputToUsernameAndPasswordStep(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User_name",
+                  "Pass_word"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "test1",
+                  "123"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "test2",
+                  "123"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "test3",
+                  "123"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49576600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
             "line": 1,
-            "name": "@dangnhap"
+            "name": "@demobackground"
+          },
+          {
+            "line": 18,
+            "name": "@datatable_step1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2230221599,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Data Table in Scenario",
+        "description": "",
+        "id": "datatable-feature;data-table-in-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 619851900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 110085800,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 36,
+                "value": "#      Given Open facebook application"
+              }
+            ],
+            "line": 37,
+            "name": "Input to Username textbox with test1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test1",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookSteps.inputToUsernameTextbox(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110450699,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Input to Password textbox with 1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookSteps.inputToPasswordTextbox(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59313499,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@demobackground"
+          },
+          {
+            "line": 34,
+            "name": "@datable_scenario"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2010531300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Data Table in Scenario",
+        "description": "",
+        "id": "datatable-feature;data-table-in-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 618290101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 105933999,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 36,
+                "value": "#      Given Open facebook application"
+              }
+            ],
+            "line": 37,
+            "name": "Input to Username textbox with test2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test2",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookSteps.inputToUsernameTextbox(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111555300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Input to Password textbox with 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookSteps.inputToPasswordTextbox(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58621400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@demobackground"
+          },
+          {
+            "line": 34,
+            "name": "@datable_scenario"
+          }
+        ]
+      }
+    ],
+    "name": "Datatable feature",
+    "description": "",
+    "id": "datatable-feature",
+    "keyword": "Feature",
+    "uri": "dataTable.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@demobackground"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2198304001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "scenario  have no parameter",
+        "description": "",
+        "id": "verify-facebook-login-page;scenario--have-no-parameter",
+        "after": [
+          {
+            "result": {
+              "duration": 628223801,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 109606400,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 7,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 8,
+            "name": "Input to Username textbox",
+            "match": {
+              "location": "FacebookSteps.inputToUsernameTextbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154156200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Input to Password textbox",
+            "match": {
+              "location": "FacebookSteps.inputToPasswordTextbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92727201,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@no_param"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 11,
+            "value": "#    And Close application"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 2218069300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "scenario have parameter",
+        "description": "",
+        "id": "verify-facebook-login-page;scenario-have-parameter",
+        "after": [
+          {
+            "result": {
+              "duration": 620743099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97778300,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 15,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 16,
+            "name": "Input to Username textbox with \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 32
+                }
+              ],
+              "location": "FacebookSteps.inputToUsernameTextboxWith(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105924400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Input to Password textbox with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 32
+                }
+              ],
+              "location": "FacebookSteps.inputToPasswordTextboxWith(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59080100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@have_param_mark"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 19,
+            "value": "#    And Close application"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 2124942000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "scenario have parameter",
+        "description": "",
+        "id": "verify-facebook-login-page;scenario-have-parameter",
+        "after": [
+          {
+            "result": {
+              "duration": 598682300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107976700,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 23,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 24,
+            "name": "Input to Username textbox with test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookSteps.inputToUsernameTextbox(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110527901,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Input to Password textbox with 123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookSteps.inputToPasswordTextbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58145900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@have_param_no_mark"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 27,
+            "value": "#    And Close application"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 2247344201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "scenario have parameter",
+        "description": "",
+        "id": "verify-facebook-login-page;scenario-have-parameter",
+        "after": [
+          {
+            "result": {
+              "duration": 623169600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FacebookSteps.closeApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 250787800,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 31,
+                "value": "#    Given Open facebook application"
+              }
+            ],
+            "line": 32,
+            "name": "Input to Username with \"test\" And Input to Password with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 24
+                },
+                {
+                  "val": "123",
+                  "offset": 58
+                }
+              ],
+              "location": "FacebookSteps.inputToUsernameWithAndInputToPasswordWith(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58997900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@multiple_param"
           }
         ]
       }
@@ -235,11 +975,11 @@
     "description": "",
     "id": "verify-facebook-login-page",
     "keyword": "Feature",
-    "uri": "verifyFacebook.feature",
+    "uri": "demobeforeafter.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@dangnhap"
+        "name": "@demobackground"
       }
     ]
   }

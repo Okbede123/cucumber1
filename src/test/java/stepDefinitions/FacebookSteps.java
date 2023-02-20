@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -22,13 +24,19 @@ public class FacebookSteps {
     WebDriver driver;
 
 
-    @Given("^Open facebook application$")
+//    @Given("^Open facebook application$")
+    @Before
     public void openFacebookApplication()  {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://www.facebook.com/");
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
+    }
+
+    @And("^Click to Submit button$")
+    public void clickToSubmitButton() {
+        driver.findElement(By.tagName("button")).click();
     }
 
     @Then("^Verify email textbox is displayed$")
@@ -41,7 +49,7 @@ public class FacebookSteps {
         Assert.assertTrue(driver.findElement(By.id("pass")).isDisplayed());
     }
 
-    @And("^Close application$")
+    @After
     public void closeApplication() {
         driver.quit();
     }
@@ -58,10 +66,7 @@ public class FacebookSteps {
         driver.findElement(By.id("pass")).sendKeys("123");
     }
 
-    @And("^Click to Submit button$")
-    public void clickToSubmitButton() {
-        driver.findElement(By.tagName("button")).click();
-    }
+
 
     @When("^Input to Username textbox with \"([^\"]*)\"$")
     public void inputToUsernameTextboxWith(String userName)  {
@@ -124,4 +129,7 @@ public class FacebookSteps {
         List<Map<String,String>> dataMap = table.asMaps(String.class, String.class);
         System.out.println("table " + dataMap.size());
     }
+
+
+
 }
