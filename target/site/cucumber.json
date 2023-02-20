@@ -1,0 +1,246 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 65,
+        "name": "scenario new customer with username test1",
+        "description": "",
+        "id": "verify-facebook-login-page;scenario-new-customer-with-username-\u003cusername\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9855003700,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Open facebook application",
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 566275300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Input to Username And Password step",
+            "match": {
+              "location": "FacebookSteps.inputToUsernameAndPasswordStep(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User_name",
+                  "Pass_word"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "test1",
+                  "123"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "test2",
+                  "123"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "test3",
+                  "123"
+                ],
+                "line": 56
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2831000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Verify list data",
+            "match": {
+              "location": "FacebookSteps.verifyListData(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User_name",
+                  "Password"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "\u003cUser_name\u003e",
+                  "\u003cPass_word\u003e"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45641000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 49,
+            "name": "@datatable_step1"
+          },
+          {
+            "line": 1,
+            "name": "@dangnhap"
+          }
+        ]
+      },
+      {
+        "line": 66,
+        "name": "scenario new customer with username test5",
+        "description": "",
+        "id": "verify-facebook-login-page;scenario-new-customer-with-username-\u003cusername\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5402261800,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Open facebook application",
+            "match": {
+              "location": "FacebookSteps.openFacebookApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 554016100,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Input to Username And Password step",
+            "match": {
+              "location": "FacebookSteps.inputToUsernameAndPasswordStep(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User_name",
+                  "Pass_word"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "test1",
+                  "123"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "test2",
+                  "123"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "test3",
+                  "123"
+                ],
+                "line": 56
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99500,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Verify list data",
+            "match": {
+              "location": "FacebookSteps.verifyListData(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User_name",
+                  "Password"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "\u003cUser_name\u003e",
+                  "\u003cPass_word\u003e"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47638500,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Click to Submit button",
+            "match": {
+              "location": "FacebookSteps.clickToSubmitButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 49,
+            "name": "@datatable_step1"
+          },
+          {
+            "line": 1,
+            "name": "@dangnhap"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Facebook login page",
+    "description": "",
+    "id": "verify-facebook-login-page",
+    "keyword": "Feature",
+    "uri": "verifyFacebook.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@dangnhap"
+      }
+    ]
+  }
+]
