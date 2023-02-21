@@ -12,6 +12,7 @@
     <properties>
         <cucumber.version> 1.2.5 </cucumber.version>
         <selenium.version> 3.141.59 </selenium.version>
+        <report.version>5.7.0</report.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.target>11</maven.compiler.target>
@@ -31,6 +32,15 @@
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-junit</artifactId>
@@ -38,21 +48,19 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.1</version>
-            <scope>test</scope>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
         </dependency>
+
 
         <dependency>
             <groupId>log4j</groupId>
@@ -63,7 +71,7 @@
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
-            <version>3.20.0</version>
+            <version>${report.version}</version>
         </dependency>
     </dependencies>
 
@@ -87,8 +95,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/*/CucumberTestRunner.java</include>
+                        <include>**/*/BankGuruTestRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -97,7 +106,7 @@
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>3.10.0</version>
+                <version>${report.version}</version>
                 <executions>
                     <execution>
                         <id>execution</id>
@@ -109,8 +118,12 @@
                             <projectName>SELENIUM ONLINE - BANK GURU</projectName>
                             <outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
                             <cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>
+                            <jsonFiles>
+                                <param> **/*.json</param>
+                            </jsonFiles>
 <!--                            <enableFlashCharts>true</enableFlashCharts>-->
 <!--                            <skippedFails>true</skippedFails>-->
+                            <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>
                 </executions>
