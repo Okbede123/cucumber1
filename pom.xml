@@ -117,7 +117,8 @@
                         <configuration>
                             <projectName>SELENIUM ONLINE - BANK GURU</projectName>
                             <outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>
+                            <inputDirectory>${project.build.directory}/site</inputDirectory>
+<!--                            <cucumberOutput>${project.build.directory}/site/cucumber.json</cucumberOutput>-->
                             <jsonFiles>
                                 <param> **/*.json</param>
                             </jsonFiles>

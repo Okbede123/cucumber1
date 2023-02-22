@@ -70,14 +70,14 @@ formatter.match({
   "location": "LoginPageSteps.getLoginPageUrl(String)"
 });
 formatter.result({
-  "duration": 6035489300,
+  "duration": 8920190999,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageSteps.openRegisterOpen()"
 });
 formatter.result({
-  "duration": 1127721200,
+  "duration": 1008860899,
   "status": "passed"
 });
 formatter.match({
@@ -90,7 +90,7 @@ formatter.match({
   "location": "RegisterPageSteps.inputToEmailTextbox(String)"
 });
 formatter.result({
-  "duration": 433785300,
+  "duration": 261799900,
   "status": "passed"
 });
 formatter.match({
@@ -103,35 +103,35 @@ formatter.match({
   "location": "RegisterPageSteps.clickToSubmit(String)"
 });
 formatter.result({
-  "duration": 1108640700,
+  "duration": 1141303500,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterPageSteps.getUserAndPasswordInfo()"
 });
 formatter.result({
-  "duration": 42300,
+  "duration": 32700,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterPageSteps.backToLoginPage()"
 });
 formatter.result({
-  "duration": 997570400,
+  "duration": 702870300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageSteps.submitValidInfoToLogin()"
 });
 formatter.result({
-  "duration": 1457480000,
+  "duration": 3535368201,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.homePageDisplayed()"
 });
 formatter.result({
-  "duration": 129907000,
+  "duration": 66175499,
   "status": "passed"
 });
 });

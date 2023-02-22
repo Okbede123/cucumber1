@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cucumberOptions.BankGuruTestRunner" time="0" tests="9" errors="0" skipped="0" failures="0">
+<testsuite name="cucumberOptions.BankGuruTestRunner" time="0.001" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
@@ -39,14 +39,14 @@
     <property name="user.home" value="C:\Users\Admin"/>
     <property name="user.timezone" value="GMT+07:00"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="BROWSER" value="chrome"/>
+    <property name="BROWSER" value="firefox"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="Admin"/>
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.7-bin\apache-maven-3.8.7\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -DBROWSER=chrome verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DBROWSER=firefox verify"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.12"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -75,5 +75,5 @@
   <testcase name="When Back to Login page" classname="Scenario: Register to system" time="0"/>
   <testcase name="And Submit valid info to login userId and password" classname="Scenario: Register to system" time="0"/>
   <testcase name="Then Home page displayed" classname="Scenario: Register to system" time="0"/>
-  <testcase name="Scenario: Register to system" classname="Scenario: Register to system" time="0"/>
+  <testcase name="Scenario: Register to system" classname="Scenario: Register to system" time="0.001"/>
 </testsuite>
