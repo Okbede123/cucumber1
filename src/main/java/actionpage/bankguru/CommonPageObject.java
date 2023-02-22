@@ -1,15 +1,19 @@
 package actionpage.bankguru;
 
+import commons.BasePage;
 import interfaceUI.bankguru.BaseUIBankGuru;
 import interfaceUI.bankguru.NewCustomerPageUI;
 import org.openqa.selenium.WebDriver;
 
-public class NewCustomerPageObject extends MenuSubNavigation {
+public class CommonPageObject extends BasePage {
+
     WebDriver driver;
-    public NewCustomerPageObject(WebDriver driver) {
+
+    public CommonPageObject(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }
+
     public void inputInformationCustomer(String valueToSend, String typeValue){
 
         if(getAttribute(BaseUIBankGuru.INPUT_INFORMATION_WITH_TD,"type","Date of Birth").contains("date")){
@@ -26,6 +30,10 @@ public class NewCustomerPageObject extends MenuSubNavigation {
         clickToElements(BaseUIBankGuru.BUTTON_TYPE,typeValue);
     }
 
+    public void clickRadioGender(String value){
+        clickToElements(BaseUIBankGuru.RADIO_GENDER,value);
+    }
+
 
     public String getTextVerifyCustomerTitle(){
         return getText(NewCustomerPageUI.VERIFY_CREATE_CUSTOMER_SUCCESSFULLY);
@@ -34,5 +42,4 @@ public class NewCustomerPageObject extends MenuSubNavigation {
     public String getTextVerifyField(String field){
         return getText(NewCustomerPageUI.VERIFY_FIELD,field);
     }
-
 }

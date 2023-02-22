@@ -6,14 +6,18 @@ import java.util.Locale;
 
 public class DataHelper {
 
-    private Locale locale = new Locale("en");
-    private Faker faker = new Faker(locale);
+    private static Locale locale = new Locale("en");
+    private static Faker faker = new Faker(locale);
 
     public static DataHelper getData(){
         return  new DataHelper();
     }
 
-    public String getEmail(){
+    public static String getEmail(){
         return faker.internet().emailAddress();
+    }
+
+    public static String getNumber(int length){
+        return faker.phoneNumber().subscriberNumber(length);
     }
 }

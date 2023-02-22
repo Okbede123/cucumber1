@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
         features = "src/test/java/features/bankguru",
         glue = "stepDefinitions.bankguru",
         monochrome = true,
-        plugin = {"pretty","html:target/site/cucumber-report-default","json:target/site/cucumber.json"},
+        plugin = {"pretty","html:target/site/cucumber-report-default","json:target/site/cucumber_bankguru.json"},
         snippets = SnippetType.CAMELCASE,
-        tags = {"@register_login"})
+        tags = {"@createUserAndCustomer"})
 
 public class BankGuruTestRunner {
 }
