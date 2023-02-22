@@ -31,4 +31,8 @@ public class PageGeneralManager {
         return new EditAccountPageObject(driver);
     }
 
+    public static CommonPageObject openCommonPage(WebDriver driver){
+        return new CommonPageObject(driver);
+    }
+
 }

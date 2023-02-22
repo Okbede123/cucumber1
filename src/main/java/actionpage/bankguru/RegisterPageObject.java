@@ -2,6 +2,7 @@ package actionpage.bankguru;
 
 import commons.BasePage;
 import commons.GlobalConstant;
+import interfaceUI.bankguru.BaseUIBankGuru;
 import interfaceUI.bankguru.RegisterPageUI;
 import org.openqa.selenium.WebDriver;
 
@@ -22,10 +23,10 @@ public class RegisterPageObject extends BasePage {
     }
 
     public String getUser(){
-        return GlobalConstant.USER_NAME;
+        return getText(BaseUIBankGuru.INFORMATION_USER_ID);
     }
 
     public String getPassword(){
-        return GlobalConstant.PASSWORD;
+        return getText(BaseUIBankGuru.INFORMATION_USER_PASSWORD);
     }
 }

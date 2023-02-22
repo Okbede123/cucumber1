@@ -40,5 +40,4 @@ public class LoginPageSteps {
         loginPageUrl = url;
     }
 
-
 }

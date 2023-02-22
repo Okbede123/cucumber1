@@ -49,4 +49,5 @@ public class RegisterPageSteps {
         registerPageObject.goToURl(LoginPageSteps.loginPageUrl);
     }
 
+
 }
