@@ -15,7 +15,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             bat 'mvn test-DBROWSER=firefox'
           }
